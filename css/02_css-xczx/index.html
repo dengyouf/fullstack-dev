@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="deng you" /><link rel="canonical" href="https://dengyouf.github.io/fullstack-dev/css/02_css-xczx/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>学成在线 - Reading NOTES</title>
+    <link rel="stylesheet" href="../theme.css" />
+    <link rel="stylesheet" href="../theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u5b66\u6210\u5728\u7ebf";
+        var mkdocs_page_input_path = "css\\02_css-xczx.md";
+        var mkdocs_page_url = "/fullstack-dev/css/02_css-xczx/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Reading NOTES
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">HTML & CSS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../html/01_html/">HTML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01_css/">CSS</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">前端实战</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">学成在线</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">设置项目目录结构</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">设置默认样式</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">设置版心</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">网页制作思路</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">设置网页背景色</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#header-">header区域-整体布局</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#logo">logo</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nav">导航 nav</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">搜索区域</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_8">用户</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bannar-">bannar区域-整体布局</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_9">推荐区域</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_10">精品推荐</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_11">前端开发工程师</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_12">版权信息</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Reading NOTES</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>前端实战 &raquo;</li>
+      <li>学成在线</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/dengyouf/fullstack-dev/edit/master/docs/css/02_css-xczx.md"> Edit on dengyouf/blog</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="_1">学成在线网页制作</h2>
+<p><img alt="" src="../../images/xczx0.png" /></p>
+<h3 id="_2">设置项目目录结构</h3>
+<p>项目目录是指存放网站的第一层文件夹，内部宝航当前网站的所有素材，包括HTML、CSS、图片、JavaScript等等</p>
+<p><img alt="" src="../../images/xczx.png" /></p>
+<ul>
+<li><strong>eduspaces</strong>: 项目目录<ul>
+<li>images: 存放固定使用的图片素材，例如： logo、样式修饰图等</li>
+<li>css： 存放css文件，使用link标签引入<ul>
+<li>base.css: 基础公共样式，例如清除默认样式、设置王爷基本样式等</li>
+<li>index.css： index首页css样式</li>
+</ul>
+</li>
+<li>index.html: 首页HTML文件</li>
+</ul>
+</li>
+</ul>
+<h3 id="_3">设置默认样式</h3>
+<p>文件： base.css</p>
+<pre><code class="language-css">/* 基础公共样式：清除默认样式 + 设置通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  body {
+    font: 14px/1.5 &quot;Microsoft Yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Heiti SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif;
+    color: #333;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+</code></pre>
+<h3 id="_4">设置版心</h3>
+<p>查看设计稿，选择溢出明显的版心区域，设置 index.css 版心居中代码如下
+<img alt="" src="../../images/banxin.png" /></p>
+<pre><code class="language-css">.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+</code></pre>
+<h3 id="_5">网页制作思路</h3>
+<p>先整体再局部，从外到内，从上到下，从左到右
+CSS 实现思路：</p>
+<ul>
+<li>先画盒子<ul>
+<li>宽、高、背景色</li>
+</ul>
+</li>
+<li>再布局<ul>
+<li>调整盒子的内外边距</li>
+</ul>
+</li>
+<li>最后调整样式<ul>
+<li>控制图片、文字内容样式</li>
+</ul>
+</li>
+</ul>
+<h3 id="_6">设置网页背景色</h3>
+<pre><code class="language-css">body {
+    background-color: #f3f5f7;
+}
+</code></pre>
+<h3 id="header-">header区域-整体布局</h3>
+<p>通栏：快读与浏览器窗口相同的盒子
+- 标签结构： 通栏&gt;版心&gt;logo+导航+搜索+用户
+<img alt="" src="../../images/tonglan.png" /></p>
+<pre><code class="language-html">    &lt;!-- 头部区域 --&gt;
+    &lt;div class=&quot;header&quot;&gt;
+       &lt;div class=&quot;wrapper&quot;&gt;
+        &lt;div class=&quot;logo&quot;&gt;logo&lt;/div&gt;
+        &lt;div class=&quot;nav&quot;&gt;nav&lt;/div&gt;
+        &lt;div class=&quot;search&quot;&gt;search&lt;/div&gt;
+        &lt;div class=&quot;user&quot;&gt;user&lt;/div&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">/* 设置头部的高度 */
+.header {
+    height: 100px;
+
+}
+/* 水平排列 */
+.header .wrapper {
+    padding-top: 29px;
+    display: flex;
+}
+</code></pre>
+<h4 id="logo">logo</h4>
+<p>单击跳转到首页，搜索引擎优化，提升完整百度搜索排名
+实现方法：
+- 标签结构： h1&gt;a&gt;网站关键字， css对a标签进行样式调整</p>
+<pre><code class="language-html">        &lt;div class=&quot;logo&quot;&gt;
+            &lt;h1&gt;&lt;a href=&quot;#&quot;&gt;学成在线&lt;/a&gt;&lt;/h1&gt;
+        &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">.logo  a{
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    /* 隐藏字体 */
+    font-size: 0px;
+}
+</code></pre>
+<h4 id="nav">导航 nav</h4>
+<p>实现方法：
+- 标签： ul&gt;li*3&gt;a
+- 优势避免堆砌a标签，导致网站搜索排名降级</p>
+<pre><code class="language-html">        &lt;div class=&quot;nav&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;课程&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;职业规划&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">.nav {
+    margin-left: 102px;
+}
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 24px;
+}
+
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    font-size: 19px;
+    line-height: 27px;
+}
+
+/* active类选择器，表示默认选中 a */
+.nav li .active,
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+</code></pre>
+<h4 id="_7">搜索区域</h4>
+<pre><code class="language-html">        &lt;div class=&quot;search&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;请输入关键字&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">/* 搜索 */
+.search {
+    display: flex;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+    display: flex;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+
+.search input {
+    flex: 1;   /*占用所有区域*/
+    border: 0; /*去掉边框线*/
+    background-color: transparent; /*透明*/
+    outline: none;/*去掉焦点框*/
+}
+
+/* 设置提示文字大小 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+/*父级别是flex，子级会继承，成为弹性盒子*/
+.search a {
+    /* margin: 12px 12px; */
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+}
+</code></pre>
+<h4 id="_8">用户</h4>
+<pre><code class="language-html">        &lt;div class=&quot;user&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt; 
+                &lt;img src=&quot;./uploads/user.png&quot; alt=&quot;&quot;&gt;
+                &lt;span&gt;波仔学前端&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.user {
+    margin-left: 32px;
+    margin-top: 4px;
+}
+
+/* 行内图片文字垂直居中*/
+.user img {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.user span {
+    font-size: 16px;
+    color: #666;
+}
+</code></pre>
+<h3 id="bannar-">bannar区域-整体布局</h3>
+<p><img alt="" src="../../images/bannar.png" /></p>
+<pre><code class="language-HTML">&lt;!-- banner --&gt;
+    &lt;div class=&quot;banner&quot;&gt;
+        &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;div class=&quot;left&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;前端开发&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;后端开发&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;移动开发&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;人工智能&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;商业预测&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;云计算&amp;大数据&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;运维&amp;测试&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;UI设计&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;产品&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;right&quot;&gt;
+                &lt;h3&gt;我的课程表&lt;/h3&gt;
+                &lt;div class=&quot;content&quot;&gt;
+                    &lt;dl&gt;
+                        &lt;dt&gt;数据可视化课程&lt;/dt&gt;
+                        &lt;dd&gt;&lt;span&gt;正在学习&lt;/span&gt;- &lt;strong&gt;echart使用步骤&lt;/strong&gt;&lt;/dd&gt;
+                    &lt;/dl&gt;
+                    &lt;dl&gt;
+                        &lt;dt&gt;数据可视化课程&lt;/dt&gt;
+                        &lt;dd&gt;&lt;span&gt;正在学习&lt;/span&gt;- &lt;strong&gt;echart使用步骤&lt;/strong&gt;&lt;/dd&gt;
+                    &lt;/dl&gt;
+                    &lt;dl&gt;
+                        &lt;dt&gt;数据可视化课程&lt;/dt&gt;
+                        &lt;dd&gt;&lt;span&gt;正在学习&lt;/span&gt;- &lt;strong&gt;echart使用步骤&lt;/strong&gt;&lt;/dd&gt;
+                    &lt;/dl&gt; 
+                     &lt;a href=&quot;#&quot;&gt;全部课程&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">.banner {
+    height: 420px;
+    background-color: #0092cb ;
+}
+
+.banner  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+
+/* 侧导航 */
+.banner .left {
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    /* background-color: #005576 ; */
+    background-color: rgba(0, 0,0, 0.42);
+}
+
+.banner .left a {
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    background: url(../images/right.png) no-repeat right center;
+    font-size: 16px;
+    color: #fff;
+}
+.banner .left a:hover {
+    background: url(../images/right-hover.png) no-repeat right center;
+
+    color: #0092cb;
+
+}
+
+
+.banner .right {
+    margin-top: 60px;
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+/* .banner .right h3 {
+    margin-left: 14px;
+    margin-top: 18px;
+    width: 75px;
+    height: 21px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+} */
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.banner .right .content {
+    padding: 14px;
+    /* width: 218px; */
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.banner .right dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.banner .right dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.banner .right dd  span {
+    color: #00a4ff;
+    /* font-weight: 400; */
+}
+.banner .right dd  strong {
+    font-weight: 400;
+    color:  #999;
+}
+
+
+.banner .right a {
+    display: block;
+    width: 190px;
+    height: 32px;
+    background-color: #00a4ff;
+    border-radius: 15px;
+    /* 水平居中 */
+    text-align: center; 
+    /* 垂直居中 */
+    line-height: 32px;
+    font-size: 15px;
+    color: #fff;
+}
+</code></pre>
+<h3 id="_9">推荐区域</h3>
+<p><img alt="" src="../../images/recommend.png" /></p>
+<pre><code class="language-html">    &lt;div class=&quot;recommend wrapper&quot;&gt;
+        &lt;h3&gt;精品推荐&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Ajax&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Vue2.0&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Vue3.0&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;TypeScript&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;React&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;a href=&quot;#&quot; class=&quot;modify&quot;&gt;修改兴趣&lt;/a&gt;
+    &lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.recommend { 
+    display: flex;
+    margin-top: 12px;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    line-height: 60px;
+}
+
+
+.recommend h3 {
+    font-size: 18px;
+    color: #0092cb;
+    font-weight: 400;
+}
+
+.recommend ul { 
+    display: flex;
+    flex: 1; 
+}
+
+.recommend ul li a {
+    padding: 0px 24px;
+    border-right: 1px solid ;
+    font-size: 18px;
+}
+
+.recommend ul li:last-child a {
+    border-right: 0px solid ;
+}
+
+.recommend .modify {
+    font-size: 16px;
+    color: #0092cb;
+}
+</code></pre>
+<h3 id="_10">精品推荐</h3>
+<p><img alt="" src="../../images/recommend2.png" /></p>
+<pre><code class="language-HTML">&lt;div class=&quot;course wrapper&quot;&gt;
+        &lt;!-- 标题 --&gt;
+        &lt;div class=&quot;hd&quot;&gt;
+            &lt;h3&gt;精品推荐&lt;/h3&gt;
+            &lt;a href=&quot;#&quot; class=&quot;more&quot;&gt;查看全部&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- 内容 --&gt;
+        &lt;div class=&quot;bd&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;
+                        &lt;div class=&quot;pic&quot;&gt;&lt;img src=&quot;./uploads/course01.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;text&quot;&gt;
+                            &lt;h4&gt;JavaScript数据看板项目实战&lt;/h4&gt;
+                            &lt;p&gt;&lt;span&gt;高级&lt;/span&gt; · &lt;i&gt;1125&lt;/i&gt;在学习&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;2&lt;/li&gt;
+                &lt;li&gt;3&lt;/li&gt;
+                &lt;li&gt;4&lt;/li&gt;
+                &lt;li&gt;5&lt;/li&gt;
+                &lt;li&gt;6&lt;/li&gt;
+                &lt;li&gt;7&lt;/li&gt;
+                &lt;li&gt;8&lt;/li&gt;
+                &lt;li&gt;9&lt;/li&gt;
+                &lt;li&gt;10&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">.course {
+    margin-top: 15px;
+}
+
+/*标题，公共类，其它区域公用 */
+.hd {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+.hd h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+.hd .more {
+    padding-right: 20px;
+    font-size: 14px;
+    color: #999;
+    background: url(../images/more.png) no-repeat right center;
+}
+
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 课程内容 */
+.bd li {
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    background-color: pink;
+}
+
+.bd li .pic {
+    height: 156px;
+
+}
+.bd li .text {
+    padding: 20px;
+    height: 115px;
+    background-color: #fff;
+}
+
+.bd li .text h4 {
+    margin-bottom: 13px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.bd li .text p {
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+.bd li .text span {
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fa6400;
+}
+.bd li .text p i {
+    font-style: normal;
+}
+</code></pre>
+<h3 id="_11">前端开发工程师</h3>
+<p><img alt="" src="../../images/qianduan.png" /></p>
+<pre><code class="language-html">    &lt;div class=&quot;wrapper&quot;&gt;
+        &lt;div class=&quot;hd&quot;&gt;
+            &lt;h3&gt;前端开发工程师&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;热门&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;初级&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;中级&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;高级&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;a href=&quot;&quot; class=&quot;more&quot;&gt;查看更多&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bd&quot;&gt;
+            &lt;div class=&quot;left&quot;&gt;
+                &lt;img src=&quot;./uploads/web_left.png&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;right&quot;&gt;
+                &lt;div class=&quot;top&quot;&gt;&lt;img src=&quot;./uploads/web_top.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;bottom&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;#&quot;&gt;
+                                &lt;div class=&quot;pic&quot;&gt;&lt;img src=&quot;./uploads/course01.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+                                &lt;div class=&quot;text&quot;&gt;
+                                    &lt;h4&gt;JavaScript数据看板项目实战&lt;/h4&gt;
+                                    &lt;p&gt;&lt;span&gt;高级&lt;/span&gt; · &lt;i&gt;1125&lt;/i&gt;在学习&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;1&lt;/li&gt;
+                        &lt;li&gt;2&lt;/li&gt;
+                        &lt;li&gt;3&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<pre><code class="language-CSS">.hd ul {
+    display: flex;
+}
+
+.hd li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.hd li  .active {
+    color: #00a4ff;
+}
+
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+.bd .left {
+    width: 228px;
+
+}
+
+.bd .right {
+    width: 957px;
+}
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
+}
+</code></pre>
+<h3 id="_12">版权信息</h3>
+<p><img alt="" src="../../images/banquan.png" /></p>
+<pre><code class="language-HTML">    &lt;div class=&quot;footer&quot;&gt;
+        &lt;div class=&quot;wrapper&quot;&gt;
+            &lt;div class=&quot;left&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;./images/logo.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+                &lt;p&gt;学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。
+                    © 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号&lt;/p&gt;
+                &lt;a href=&quot;&quot; class=&quot;download&quot;&gt;下载APP&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;right&quot;&gt;
+                &lt;dl&gt;
+                    &lt;dt&gt;关于学成网&lt;/dt&gt;
+                    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;合作机构&lt;/a&gt;&lt;/dd&gt;
+                    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;合作导师&lt;/a&gt;&lt;/dd&gt;
+                &lt;/dl&gt;
+                &lt;dl&gt;
+                    &lt;dt&gt;新手指南&lt;/dt&gt;
+                    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;合作机构&lt;/a&gt;&lt;/dd&gt;
+                    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;合作导师&lt;/a&gt;&lt;/dd&gt;
+                &lt;/dl&gt;
+                &lt;dl&gt;
+                    &lt;dt&gt;合作伙伴&lt;/dt&gt;
+                    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;合作机构&lt;/a&gt;&lt;/dd&gt;
+                    &lt;dd&gt;&lt;a href=&quot;&quot;&gt;合作导师&lt;/a&gt;&lt;/dd&gt;
+                &lt;/dl&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">.footer {
+    margin-top: 60px;
+    padding-top: 60px;
+    height: 273px;
+    background-color: #fff;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left {
+    width: 432px;
+    /* height: 148px; */
+    /* background-color: pink; */
+}
+
+.footer .left p {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+}
+
+.footer .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+}   
+
+.footer .right  {
+    display: flex;
+}
+
+.footer .right dl {
+    margin-left: 130px;
+}
+.footer .right dt {
+   margin-bottom: 12px;
+   font-size: 16px;
+   line-height: 23px;
+}
+
+.footer .right a {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../01_css/" class="btn btn-neutral float-left" title="CSS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../01_css/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
