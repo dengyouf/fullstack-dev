@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="deng you" /><link rel="canonical" href="https://dengyouf.github.io/fullstack-dev/html/01_html/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>HTML - Reading NOTES</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "HTML";
+        var mkdocs_page_input_path = "html\\01_html.md";
+        var mkdocs_page_url = "/fullstack-dev/html/01_html/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Reading NOTES
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">HTML & CSS</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">HTML</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#html_1">HTML 定义</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_1">标签语法</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#html_2">HTML 骨架</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">标签的关系</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">注释</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">常见的标签</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#-h">标题标签 - h#</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-p">段落标签 - p</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-br-hr">换行与水平线 - br hr</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">文本格式化标签</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-img">图像标签 - img</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-a">超链接- a</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-audio">音频标签 - audio</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">视频标签</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">列表标签</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#-ul">无序列表 - ul</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-ol">有序列表 - ol</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-dl">定义列表 - dl</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-table">表格 - table</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_8">合并单元格</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-form">表单 - form</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#input">input 基本使用</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#input-placeholder">input 占位符号 - placeholder</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-radio">单选框 - radio</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-file">上传文件 - file</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-checkbox">多选框 - checkbox</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-select-option">下拉菜单 - select 嵌套 option</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-textarea">文本域 - textarea</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#label">label标签</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#-button">按钮 - button</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#_9">表单综合案例</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-div-span">无语义的布局标签 - div span</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_10">有语义的布局标签</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_11">字符实体</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../css/01_css/">CSS</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Reading NOTES</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>HTML & CSS &raquo;</li>
+      <li>HTML</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/dengyouf/fullstack-dev/edit/master/docs/html/01_html.md"> Edit on dengyouf/blog</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="html">HTML</h1>
+<h2 id="html_1">HTML 定义</h2>
+<p>HTML 超文本标记语言（<code>HyperText Markuo Language</code>）
+- 超文本: 链接
+- 标记: 标记也叫标签，带尖括号的文本</p>
+<h2 id="_1">标签语法</h2>
+<p><img alt="" src="../images/strong.png" /></p>
+<ul>
+<li>标签成对出现，中间包裹内容</li>
+<li><code>&lt;&gt;</code> 里面放英文字母(标签名)</li>
+<li>结束标签比开始标签多 <code>/</code><ul>
+<li>双标签： 成对出现的标签 <code>&lt;h1&gt;标题1&lt;/h1&gt;</code></li>
+<li>单标签： 只有开始标签，没有结束标签 <code>&lt;br &gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="html_2">HTML 骨架</h2>
+<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Html&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    网页主体内容
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li>html: 整个网页</li>
+<li>head： 网页头部，用来存放浏览器看的信息，例如css</li>
+<li>body：网页主题，用来存放用户看到的信息，例如图片文字</li>
+</ul>
+<h2 id="_2">标签的关系</h2>
+<ul>
+<li>父子关系（嵌套关系）: 子级标签换行且缩进</li>
+</ul>
+<pre><code class="language-HTML">&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li>兄弟关系(并列关系)：兄弟标签换行要对齐</li>
+</ul>
+<pre><code class="language-HTML">&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+</code></pre>
+<h2 id="_3">注释</h2>
+<p>注释是对代码的解释贺说明 ,在浏览器中不会显示<code>&lt;!-- ... --&gt;</code></p>
+<h2 id="_4">常见的标签</h2>
+<h3 id="-h">标题标签 - <code>h#</code></h3>
+<p>标题标签一般用于新闻标题、文章标题、网页区域名称、产品名称等等</p>
+<p>h1 标签在一个网页中只能用一次，用来放新闻标题或网页的 logo</p>
+<p><strong>标签名字：<code>h1 ~ h6</code></strong></p>
+<p>显示特点：
+- 文字加粗
+- 字号逐渐减小
+- 独占一行</p>
+<h3 id="-p">段落标签 - <code>p</code></h3>
+<p>一般用在新闻段落、文章段落、产品描述等。</p>
+<p><strong>标签名字<code>p</code></strong></p>
+<p>显示特点：
+- 独占一行
+- 段落之间存在间隙</p>
+<h3 id="-br-hr">换行与水平线 - <code>br</code> <code>hr</code></h3>
+<p>单标签
+- 换行： <code>&lt;br &gt;</code>
+- 水平线： <code>&lt;hr &gt;</code></p>
+<h3 id="_5">文本格式化标签</h3>
+<p><img alt="" src="../images/front.png" /></p>
+<h3 id="-img">图像标签 - <code>img</code></h3>
+<p>在网页中插入图片
+- 标签名： <code>img</code>
+  - src: 图片名称贺位置
+  - alt： 替换文本，当图片不存在时显示文字
+  - title： 提示文本，苏表悬停在图片上显示的文字
+  - width: 图片的宽度
+  - height： 图片的高度</p>
+<pre><code class="language-HTML">&lt;img src=&quot;./images/hello.png&quot; alt=&quot;hello&quot; title=&quot;hello&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
+</code></pre>
+<h3 id="-a">超链接- <code>a</code></h3>
+<pre><code class="language-HTML">&lt;a href=&quot;https://www.baidu.com&quot; target=&quot;_blank&quot; &gt;跳转到百度&lt;/a&gt;
+</code></pre>
+<ul>
+<li><code>target= "_blank"</code>: 在新窗口打开页面</li>
+</ul>
+<h3 id="-audio">音频标签 - <code>audio</code></h3>
+<pre><code class="language-HTML">&lt;audio src=&quot;音频的 URL&quot;&gt;&lt;/audio&gt;
+</code></pre>
+<ul>
+<li>controls: 显示音频控制面板</li>
+<li>loop： 循环播放</li>
+<li>autpplay： 自动播放</li>
+</ul>
+<h3 id="_6">视频标签</h3>
+<pre><code class="language-HTML">&lt;video src=&quot;视频的 URL&quot;&gt;&lt;/video&gt;
+</code></pre>
+<ul>
+<li>controls: 显示音频控制面板</li>
+<li>loop： 循环播放</li>
+<li>autpplay： 自动播放</li>
+<li>muted: 静音播放，为了提升用户体验，浏览器支持在静音状态下播放</li>
+</ul>
+<h3 id="_7">列表标签</h3>
+<p>作用：布局内容排列整齐的区域。</p>
+<h4 id="-ul">无序列表 - <code>ul</code></h4>
+<p>ul 标签里面只能包裹 li 标签,li 是列表条目, li 标签里面可以包裹任何内容</p>
+<pre><code class="language-HTML">&lt;ul&gt;
+  &lt;li&gt;第一项&lt;/li&gt;
+  &lt;li&gt;第二项&lt;/li&gt;
+  &lt;li&gt;第三项&lt;/li&gt; 
+&lt;/ul&gt;
+</code></pre>
+<h4 id="-ol">有序列表 - <code>ol</code></h4>
+<pre><code class="language-HTML">&lt;ol&gt;
+  &lt;li&gt;第一项&lt;/li&gt;
+  &lt;li&gt;第二项&lt;/li&gt;
+  &lt;li&gt;第三项&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<h4 id="-dl">定义列表 - <code>dl</code></h4>
+<p>dl 嵌套 dt 和 dd，dl 是定义列表，dt 是定义列表的标题，dd 是定义列表的描述 / 详情</p>
+<pre><code class="language-HTML">&lt;dl&gt;
+  &lt;dt&gt;列表标题&lt;/dt&gt;
+  &lt;dd&gt;列表描述 / 详情&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+<h3 id="-table">表格 - <code>table</code></h3>
+<p>网页中的表格与 Excel 表格类似，用来展示数据.</p>
+<p>标签：table 嵌套 tr，tr 嵌套 td / th。</p>
+<pre><code class="language-HTML">    &lt;table border=&quot;1&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;姓名&lt;/th&gt;
+            &lt;th&gt;年龄&lt;/th&gt;
+            &lt;th&gt;性别&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;张山&lt;/td&gt;
+            &lt;td&gt;29&lt;/td&gt;
+            &lt;td&gt;男&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+</code></pre>
+<blockquote>
+<p>提示：在网页中，表格默认没有边框线，使用 border 属性可以为表格添加边框线</p>
+</blockquote>
+<h4 id="_8">合并单元格</h4>
+<p><img alt="" src="../images/table.png" /></p>
+<p>作用：将多个单元格合并成一个单元格，以合并同类信息。
+合并单元格的步骤：
+- 明确合并的目标
+  - 保留最左最上的单元格，添加属性（取值是数字，表示需要合并的单元格数量）
+  – 跨行合并，保留最上单元格，添加属性 rowspan
+  – 跨列合并，保留最左单元格，添加属性 colspan
+- 删除其他单元格</p>
+<h3 id="-form">表单 - <code>form</code></h3>
+<p>作用：收集用户信息。
+使用场景：
+• 登录页面
+• 注册页面
+• 搜索区域</p>
+<h4 id="input">input 基本使用</h4>
+<ul>
+<li>text: 文本框，用于输入单行文本</li>
+<li>password: 密码框</li>
+<li>radio： 单选框</li>
+<li>checkbox： 多选框</li>
+<li>file： 文件上传</li>
+</ul>
+<pre><code class="language-HTML">&lt;!-- 特点：输入什么就显示什么 --&gt;
+  文本框：&lt;input type=&quot;text&quot;&gt;
+  &lt;br&gt;&lt;br&gt;
+  &lt;!-- 特点：输入什么都是以 点 的形式显示 --&gt;
+  密码框：&lt;input type=&quot;password&quot; placeholder=&quot;请输入密码&quot;&gt;
+  &lt;br&gt;&lt;br&gt;
+  单选框：&lt;input type=&quot;radio&quot;&gt;
+  &lt;br&gt;&lt;br&gt;
+  多选框：&lt;input type=&quot;checkbox&quot;&gt;
+  &lt;br&gt;&lt;br&gt;
+  上传文件：&lt;input type=&quot;file&quot;&gt;
+</code></pre>
+<h4 id="input-placeholder">input 占位符号 - <code>placeholder</code></h4>
+<pre><code class="language-HTML">  文本框：&lt;input type=&quot;text&quot; placeholder=&quot;请输入用户名&quot;&gt;
+  &lt;br&gt;&lt;br&gt;
+  密码框：&lt;input type=&quot;password&quot; placeholder=&quot;请输入密码&quot;&gt;
+</code></pre>
+<h4 id="-radio">单选框 - <code>radio</code></h4>
+<pre><code class="language-HTML">  性别：
+  &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt; 男
+  &lt;input type=&quot;radio&quot; name=&quot;gender&quot; checked&gt; 女
+</code></pre>
+<h4 id="-file">上传文件 - <code>file</code></h4>
+<p>上传多个文件 </p>
+<pre><code class="language-HTML"> 上传文件：&lt;input type=&quot;file&quot; multiple&gt;
+</code></pre>
+<h4 id="-checkbox">多选框 - <code>checkbox</code></h4>
+<pre><code class="language-HTML">  兴趣爱好：
+  &lt;input type=&quot;checkbox&quot;&gt; 敲代码
+  &lt;input type=&quot;checkbox&quot; checked&gt; 敲前端代码
+  &lt;input type=&quot;checkbox&quot; checked&gt; 敲前端 HTML 代码
+</code></pre>
+<h4 id="-select-option">下拉菜单 - <code>select 嵌套 option</code></h4>
+<p>默认显示第一项，selected 属性实现默认选中功能</p>
+<pre><code class="language-HTML">  城市：
+  &lt;select&gt;
+    &lt;option&gt;北京&lt;/option&gt;
+    &lt;option&gt;上海&lt;/option&gt;
+    &lt;option&gt;广州&lt;/option&gt;
+    &lt;option&gt;深圳&lt;/option&gt;
+    &lt;option selected&gt;武汉&lt;/option&gt;
+  &lt;/select&gt;
+</code></pre>
+<h4 id="-textarea">文本域 - <code>textarea</code></h4>
+<p>作用：多行输入文本的表单控件。</p>
+<pre><code class="language-HTML">  &lt;!-- 工作中，使用 CSS 禁用右下角的拖拽功能；使用 CSS 设置尺寸 --&gt;
+  &lt;textarea&gt;请输入评论&lt;/textarea&gt;
+</code></pre>
+<h4 id="label">label标签</h4>
+<p>作用：网页中，某个标签的说明文本。用 label 标签绑定文字和表单控件的关系，增大表单控件的点击范围</p>
+<pre><code class="language-HTML">  &lt;input type=&quot;radio&quot; name=&quot;gender&quot; id=&quot;man&quot;&gt; &lt;label for=&quot;man&quot;&gt;男&lt;/label&gt;
+  &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt; 女&lt;/label&gt;
+</code></pre>
+<pre><code class="language-HTML">&lt;!--label 标签只包裹内容，不包裹表单控件  设置 label 标签的 for 属性值 和表单控件的 id 属性值相同--&gt;
+&lt;input type=&quot;radio&quot; id=&quot;man&quot;&gt;
+&lt;label for=&quot;man&quot;&gt;男&lt;/label&gt;
+
+&lt;!--使用 label 标签包裹文字和表单控件，不需要属性--&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot;&gt; 女&lt;/label&gt; 
+</code></pre>
+<h4 id="-button">按钮 - <code>button</code></h4>
+<blockquote>
+<p>注意：按钮需配合 form 标签（表单区域）才能实现对应的功能</p>
+</blockquote>
+<pre><code class="language-HTML">&lt;!-- form 表单区域 --&gt;
+  &lt;!-- action=&quot;&quot; 发送数据的地址 --&gt;
+  &lt;form action=&quot;&quot;&gt;
+    用户名：&lt;input type=&quot;text&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+    密码：&lt;input type=&quot;password&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;!-- 如果省略 type 属性，功能是 提交 --&gt;
+    &lt;button type=&quot;submit&quot;&gt;提交&lt;/button&gt;
+    &lt;button type=&quot;reset&quot;&gt;重置&lt;/button&gt;
+    &lt;button type=&quot;button&quot;&gt;普通按钮&lt;/button&gt;
+  &lt;/form&gt;
+</code></pre>
+<h4 id="_9">表单综合案例</h4>
+<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;注册信息&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;注册信息&lt;/h1&gt;
+  &lt;form action=&quot;&quot;&gt;
+    &lt;!-- 表单控件 --&gt;
+    &lt;!-- 个人信息 --&gt;
+    &lt;h2&gt;个人信息&lt;/h2&gt;
+    &lt;label&gt;姓名：&lt;/label&gt;&lt;input type=&quot;text&quot; placeholder=&quot;请输入真实姓名&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;密码：&lt;/label&gt;&lt;input type=&quot;password&quot; placeholder=&quot;请输入密码&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;确认密码：&lt;/label&gt;&lt;input type=&quot;password&quot; placeholder=&quot;请输入确认密码&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;性别：&lt;/label&gt;
+    &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt; 男&lt;/label&gt;
+    &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;gender&quot; checked&gt; 女&lt;/label&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;居住城市：&lt;/label&gt;
+    &lt;select&gt;
+      &lt;option&gt;北京&lt;/option&gt;
+      &lt;option&gt;上海&lt;/option&gt;
+      &lt;option&gt;广州&lt;/option&gt;
+      &lt;option&gt;深圳&lt;/option&gt;
+      &lt;option&gt;武汉&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;!-- 教育经历 --&gt;
+    &lt;h2&gt;教育经历&lt;/h2&gt;
+    &lt;label&gt;最高学历：&lt;/label&gt;
+    &lt;select&gt;
+      &lt;option&gt;博士&lt;/option&gt;
+      &lt;option&gt;硕士&lt;/option&gt;
+      &lt;option&gt;本科&lt;/option&gt;
+      &lt;option&gt;大专&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;学校名称：&lt;/label&gt;&lt;input type=&quot;text&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;所学专业：&lt;/label&gt;&lt;input type=&quot;text&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;在校时间：&lt;/label&gt;
+    &lt;select&gt;
+      &lt;option&gt;2015&lt;/option&gt;
+      &lt;option&gt;2016&lt;/option&gt;
+      &lt;option&gt;2017&lt;/option&gt;
+      &lt;option&gt;2018&lt;/option&gt;
+    &lt;/select&gt;
+    --
+    &lt;select&gt;
+      &lt;option&gt;2019&lt;/option&gt;
+      &lt;option&gt;2020&lt;/option&gt;
+      &lt;option&gt;2021&lt;/option&gt;
+      &lt;option&gt;2022&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;!-- 工作经历 --&gt;
+    &lt;h2&gt;工作经历&lt;/h2&gt;
+    &lt;label&gt;公司名称：&lt;/label&gt;&lt;input type=&quot;text&quot;&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;label&gt;工作描述：&lt;/label&gt;
+    &lt;br&gt;
+    &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;!-- 协议 和 按钮 --&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;&lt;label&gt;已阅读并同意以下协议：&lt;/label&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;《用户服务协议》&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;《隐私政策》&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;button&gt;免费注册&lt;/button&gt;
+    &lt;button type=&quot;reset&quot;&gt;重新填写&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><img alt="" src="../images/form.png" /></p>
+<h3 id="-div-span">无语义的布局标签 - <code>div</code> <code>span</code></h3>
+<ul>
+<li>div：独占一行</li>
+<li>span：不换行</li>
+</ul>
+<h3 id="_10">有语义的布局标签</h3>
+<ul>
+<li>header： 网页头部</li>
+<li>nav： 网页导航</li>
+<li>footer 网页底部</li>
+<li>aside： 网页侧标蓝</li>
+<li>section: 网页区块</li>
+<li>article: 网页文章</li>
+</ul>
+<h3 id="_11">字符实体</h3>
+<p>作用：在网页中显示预留字符
+- <code>&amp;nbsp;</code>： 空格
+- <code>&amp;lt;</code>: 小于号
+- <code>&amp;gt;</code>: 大于号</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../css/01_css/" class="btn btn-neutral float-right" title="CSS">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="../../css/01_css/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
