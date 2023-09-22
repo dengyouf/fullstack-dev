@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dengyouf.github.io/fullstack-dev/</loc>
-         <lastmod>2023-09-21</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengyouf.github.io/fullstack-dev/css/01_css/</loc>
-         <lastmod>2023-09-21</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengyouf.github.io/fullstack-dev/css/02_css-xczx/</loc>
-         <lastmod>2023-09-21</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengyouf.github.io/fullstack-dev/html/01_html/</loc>
-         <lastmod>2023-09-21</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengyouf.github.io/fullstack-dev/js/01-js_bases/</loc>
-         <lastmod>2023-09-21</lastmod>
+         <lastmod>2023-09-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
