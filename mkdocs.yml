@@ -33,6 +33,7 @@ nav:
     - CSS: 'css/01_css.md'
   - JavaScript:
     - JavaScript 基础: 'js/01-js_bases.md'
+    - Web APIs: 'js/02-web_apis.md'
   - 前端实战:
       - 学成在线: 'css/02_css-xczx.md'
 

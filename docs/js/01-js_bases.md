@@ -1,5 +1,3 @@
-[//]: # ([TOC])
-
 # 
 
 [TOC]
@@ -478,15 +476,17 @@ break 退出整个循环，一般用于结果已经得到, 后续的循环不需
 - for 嵌套循环-九九乘法表
 
 ```html
-    for (let i=1;i<10;i++) {
+    <script>
+            for (let i=1;i<10;i++) {
         for (let j=1;j<=i;j++) {
-            line = `${j}*${i}=` + i*j + '  '
+            line = `${j}*${i}=${i*j} &nbsp;&nbsp;`
             document.write(line)
             if (j==i) {
                 document.write("<br>")
             }
         }
     }
+    </script>
 
     for (let i=1;i<10;i++) {
         let line = ""
