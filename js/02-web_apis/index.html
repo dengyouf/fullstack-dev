@@ -3,16 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="deng you" />
-      <link rel="shortcut icon" href="./img/favicon.ico" />
-    <title>Reading NOTES</title>
-    <link rel="stylesheet" href="./css/theme.css" />
-    <link rel="stylesheet" href="./css/theme_extra.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="deng you" /><link rel="canonical" href="https://dengyouf.github.io/fullstack-dev/js/02-web_apis/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Web APIs - Reading NOTES</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
-    <script src="./js/jquery-3.6.0.min.js" defer></script>
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Web APIs";
+        var mkdocs_page_input_path = "js\\02-web_apis.md";
+        var mkdocs_page_url = "/fullstack-dev/js/02-web_apis/";
+      </script>
+    
+    <script src="../jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
-      <script src="./js/html5shiv.min.js"></script>
+      <script src="../html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script>hljs.initHighlightingOnLoad();</script> 
@@ -24,9 +31,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="./." class="icon icon-home"> Reading NOTES
+          <a href="../.." class="icon icon-home"> Reading NOTES
         </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -35,21 +42,23 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">HTML & CSS</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="./html/01_html/">HTML</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../html/01_html/">HTML</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="./css/01_css/">CSS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../css/01_css/">CSS</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">JavaScript</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="./js/01-js_bases/">JavaScript 基础</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../01-js_bases/">JavaScript 基础</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="./js/02-web_apis/">Web APIs</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Web APIs</a>
+    <ul class="current">
+    </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">前端实战</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="./css/02_css-xczx/">学成在线</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../css/02_css-xczx/">学成在线</a>
                   </li>
               </ul>
       </div>
@@ -59,14 +68,17 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="./.">Reading NOTES</a>
+          <a href="../..">Reading NOTES</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="./." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>JavaScript &raquo;</li>
+      <li>Web APIs</li>
     <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/dengyouf/fullstack-dev/edit/master/docs/js/02-web_apis.md"> Edit on dengyouf/blog</a>
     </li>
   </ul>
   <hr/>
@@ -74,21 +86,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-
-  <h1 id="search">Search Results</h1>
-
-  <form id="content_search" action="search.html">
-    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus title="Type search term here">
-  </form>
-
-  <div id="mkdocs-search-results" class="search-results" data-no-results-text="No results found">
-    Searching...
-  </div>
-
-
+                <h1 id="_1"></h1>
+<div class="toc">
+<ul>
+<li><a href="#_1"></a></li>
+</ul>
+</div>
+              
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../01-js_bases/" class="btn btn-neutral float-left" title="JavaScript 基础"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../css/02_css-xczx/" class="btn btn-neutral float-right" title="学成在线">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -110,13 +120,17 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../01-js_bases/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../css/02_css-xczx/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="./js/theme_extra.js" defer></script>
-    <script src="./js/theme.js" defer></script>
-      <script src="./search/main.js" defer></script>
+    <script>var base_url = '../..';</script>
+    <script src="../theme_extra.js" defer></script>
+    <script src="../theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
